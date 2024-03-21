@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>POINT ACTION</title>
+  <!--Bootstrap 5 CSS--->
+  <link rel="stylesheet" type="text/css" href="../../assets/Bootstrap5/css/bootstrap.css" />
+
+  <!--Bootstrap 5 JS--->
+  <script type="text/javascript" src="../../assets/Bootstrap5/js/bootstrap.bundle.min.js"></script>
+
+  <!--Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/de952d599f.js" crossorigin="anonymous"></script>
+
+  <!--datatables CSS--->
+  <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/datatables.min.css" />
+  <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/jquery.dataTables.min.css" />
+  <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/buttons.dataTables.min.css" />
+
+  <!--Datatables js-->
+  <script type="text/javascript" src="../../assets/js/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="../../assets/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="./datatable/datatable.js"></script>
+  <script type="text/javascript" src="../../assets/js/dataTables.responsive.min.js"></script>
+
+  <!--Datatable dropdown----->
+  <script type="text/javascript" src="../../assets/js/datatables.pdfmake.min.js"></script>
+  <script type="text/javascript" src="../../assets/js/dataTables.buttons.min.js"></script>
+  <script type="text/javascript" src="../../assets/js/datatables.vfs_fonts.js"></script>
+  <script type="text/javascript" src="../../assets/js/datatables.jszip.min.js"></script>
+  <script type="text/javascript" src="../../assets/js/buttons.html5.min.js"></script>
+  <script type="text/javascript" src="../../assets/js/buttons.print.min.js"></script>
+
+  <!--Dropdown select-->
+  <link rel="stylesheet" href="../../assets/Bootstrap5/css/bootstrap-select.min.css" />
+  <script src="../../assets/Bootstrap5/js/bootstrap-select.min.js"></script>
+
+  <!--summernote_textarea-->
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+
+  <!-- CSS -->
+  <!-- validation -->
+  <script src="https://Login.loyalwings.com/assets/js/formValidation.min.js"></script>
+  <script src="https://Login.loyalwings.com/assets/js/bootstrap_validation.min.js"></script>
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <!-- <style>
+    .help-block {
+      margin-left: 10px;
+      color: red;
+    }
+  </style> -->
+  <style>
+    @media (max-width:478px) {
+      .desktops{
+        display: none;
+      }
+    }
+    @media (max-width:554px) {
+      .media1 {
+        margin-top: 0px;
+       display: block !important;
+      }
+    }
+  
+    .desktop{
+      border-bottom:1px solid #ccc;
+    }
+    .media1{
+      display: none;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div>
+    <div class="tblcontainer  ">
+      <h4>
+        Point Action
+      </h4>
+      <hr>
+      <div class="row tb-margin">
+        <div class="col-md-6">
+          <table class="details-table table table-striped">
+            <tbody>
+              <tr class="project-overview greyback">
+                <td class="viewjobft"><b>Name</b></td>
+                <td class="viewjobft">Test Diem</td>
+              </tr>
+              <tr class="project-overview">
+                <td class="viewjobft"><b>Category</b></td>
+                <td class="viewjobft">Action</td>
+              </tr>
+              <tr class="project-overview">
+                <td class="viewjobft"><b>Published</b></td>
+                <td class="viewjobf custom-text-color">Yes</td>
+              </tr>
+              <tr class="project-overview">
+                <td class="viewjobft"><b>Change points(+/-)</b></td>
+                <td class="viewjobft custom-text-color">500</td>
+              </tr>
+              <tr class="project-overview">
+                <td class="viewjobft"><b>When a contact..</b></td>
+                <td class="viewjobft">Opens an email</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-6">
+          <table class="details-table table table-striped">
+            <tbody>
+              <tr class="project-overview greyback">
+                <td class="viewjobft"><b>Description</b></td>
+                <td class="viewjobft"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+      <div class="row vendcarmt tbmargin1 desktops">
+        <div class="col-md-12">
+
+          <hr class="fileline ">
+
+          <div class="desktop">
+            <div class="scroll-images custml toptea tbmargin">
+              <div class="child mb-0">
+                <button class="tablinks tb-links active" type="button" onclick="openTab(event, 'general')">
+                  Chart Statistics
+                </button>
+              </div>
+              <div class="child mb-0">
+                <button class="tablinks tb-links" type="button" onclick="openTab(event, 'billing')">
+                  Leads
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="fileline media1">
+      <div id="carouselExampleIndicators" class="carousel slide carhide" data-bs-interval="false" >
+        <div class="carousel-inner scroll-images">
+          
+          <div class="carousel-item active" style="text-align: center;">
+          
+            <div class="child mb-0" style="height:auto;">
+              <button class="tablinks active tabresact vendor" style="width:70%" type="button"
+                onclick="openTab(event, 'general')">  Chart Statistics</button>
+            </div>
+          </div>
+          <div class="carousel-item" style="text-align: center;">
+            <div class="">
+              <div class="child mb-0" style="height:auto;">
+                <button class="tablinks tabresact vendor" style="width:70%" type="button"
+                  onclick="openTab(event, 'billing')">Leads</button>
+              </div>
+            </div>
+          </div>
+       
+      
+          <button id="prevButton" class="carousel-control-prev" style="margin-top: 0px;" type="button"
+            data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <i class="bi bi-chevron-left icon" style="color:black;font-weight: bold;"></i>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button id="nextButton" class="carousel-control-next" style="margin-top: 0px;" type="button"
+            data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <i class="bi bi-chevron-right icon" style="color:black;font-weight:bold"></i>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+       
+      </div>
+      <hr class="fileline media1">
+
+  <!-- Content for General Info tab -->
+  <div id="general" class="tabcontent">
+
+    <h5>Point Action over time</h5>
+    <p>Click and drag in the plot area to zoom in</p>
+    <hr class="fileline">
+    <h5 class="mt-4"> Point Action Stats by Campaign</h5>
+    <hr class="fileline">
+  </div>
+
+
+  <!-- Content for Billing tab -->
+  <div class="container-fluid">
+    <div id="billing" class="tabcontent">
+
+      <div class="demo-html mt-0">
+        <div class="table-responsive">
+          <table class="example display dataTable display responsive nowrap tblalign table borderless"
+            style="width: 100%" aria-describedby="example_info">
+            <thead class="theadrow custom-header">
+              <tr>
+                <th class="select-checkbox sorting_disabled" rowspan="1" colspan="1" aria-label="">
+                  <input type="checkbox" id="selectAll">
+                </th>
+                <th class="select-checkbox sorting_disabled" rowspan="1" colspan="1" aria-label="">
+                  #
+                </th>
+                <th class="select-checkbox sorting_disabled" rowspan="1" colspan="1" aria-label="Name">
+                  Name
+                </th>
+                <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                  aria-sort="ascending" aria-label="Name: activate to sort column descending">
+                  Consent(GDPR)
+                </th>
+                <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Company">
+                  Company
+                </th>
+                <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Email">
+                  Email
+                </th>
+                <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Phone">
+                  Phone
+                </th>
+                <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                  aria-label="Lead Value">
+                  Lead Value
+                </th>
+                <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Tags">
+                  Tags
+                </th>
+                <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Assigned">
+                  Assigned
+                </th>
+                <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Status">
+                  Status
+                </th>
+                <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Source">
+                  Source
+                </th>
+                <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Point">
+                  Point
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>Yes</td>
+                <td>ABC Company</td>
+                <td>john.doe@example.com</td>
+                <td>555-1234</td>
+                <td>$500</td>
+                <td>Tag1, Tag2</td>
+                <td>Mary</td>
+                <td>Active</td>
+                <td>Web</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>No</td>
+                <td>XYZ Corporation</td>
+                <td>jane.smith@example.com</td>
+                <td>555-5678</td>
+                <td>$700</td>
+                <td>Tag3, Tag4</td>
+                <td>Bob</td>
+                <td>Inactive</td>
+                <td>Email</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>3</td>
+                <td>Robert Johnson</td>
+                <td>Yes</td>
+                <td>123 Industries</td>
+                <td>robert.johnson@example.com</td>
+                <td>555-9876</td>
+                <td>$1000</td>
+                <td>Tag5, Tag6</td>
+                <td>Alice</td>
+                <td>Active</td>
+                <td>Phone</td>
+                <td>50</td>
+              </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<script>
+  function openTab(evt, tabName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  var carousel = document.getElementById("carouselExampleIndicators");
+
+  carousel.addEventListener("slid.bs.carousel", function (event) {
+    var activeSlideIndex = event.to;
+    if (activeSlideIndex === 0) {
+      openTab(event, "general");
+    } else if (activeSlideIndex === 1) {
+      openTab(event, "billing");
+    }
+  });
+</script>
+
+<script>
+  $(document).ready(function () {
+    var table = $('.example').DataTable({
+      language: { lengthMenu: '_MENU_' },
+      rowReorder: {
+        selector: 'td:nth-child(2)'
+      },
+      responsive: true,
+      dom: 'Blfrtip',
+      buttons: [
+        {
+          text: 'EXPORT',
+          extend: 'collection',
+          buttons: ['excel', 'csv', 'pdf', 'print'],
+          className: 'px-3'
+        },
+
+        {
+          text: '<i class="bi bi-arrow-repeat p-1" style="font-size:12px"></i>'
+        }
+      ]
+    });
+  });
+</script>
+</body>
+
+</html>
